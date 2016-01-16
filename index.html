@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the generated HTML file of the demo page -->
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>scbc-styleguide</title>
+
+    <link rel="stylesheet" href="css/scbc-styleguide.css?0.1.0" />
+
+</head>
+
+<body>
+
+    <section id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>SCBC Styleguide</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="typography" class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Typography</h2>
+        </div>
+        <div class="col-md-3">
+            <h4>SCBC Type Ramp</h4>
+            <p>The SCBC Type Ramp is based on a modular scale of 1.5. The base font size is 18px, with each size above it multiplied by 1.5 and each size below it divided by 1.5. There are 7 total sizes that are categorized according to the following:</p>
+
+            <h5>Headings</h5>
+            <div class="type-t5">
+                There are 5 headings to correspond to the semantic HTML tags. <code>h1</code> and <code>h2</code> have corresponding subheadings which are detailed in the subheading section below.
+
+                <ul>
+                    <li><code>h1</code> &amp; <code>.type-h1</code></li>
+                    <li><code>h2</code> &amp; <code>.type-h2</code></li>
+                    <li><code>h3</code> &amp; <code>.type-h3</code></li>
+                    <li><code>h4</code> &amp; <code>.type-h4</code></li>
+                    <li><code>h5</code> &amp; <code>.type-h5</code></li>
+                </ul>
+            </div>
+
+            <h5>Subheadings</h5>
+            <div class="type-t5">
+                These are to be used in conjunction with their appropriate headings. For instance, when using <code>.type-h1</code> you would use <code>.type-sh1</code>.
+
+                <ul>
+                    <li><code>.type-sh1</code></li>
+                    <li><code>.type-sh2</code></li>
+                </ul>
+            </div>
+
+            <h5>Paragraphs, captions, ect...</h5>
+            <div class="type-t5">
+                The remaining sizes are used for paragraphs &amp; captions.
+                <ul>
+                    <li><code>p</code> &amp; <code>.type-t5</code></li>
+                    <li><code>.caption</code> &amp; <code>.type-t6</code></li>
+                    <li><code>.caption-small</code> &amp; <code>.type-t7</code></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-9">
+            <h1>This is a headline</h1>
+<div class="type-sh1">And this is it's subheading</div>
+
+<h2>Smaller headline</h2>
+<div class="type-sh2">And this is it's smaller subheading</div>
+
+<h3>Subheadline</h3>
+<h4>Section heading</h4>
+<h5>Paragraph heading</h5>
+
+        </div>
+    </div>
+</section>
+
+<section id="colors" class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>colors</h2>
+        </div>
+        <div class="col-md-3">
+            <h4>SCBC Color Palette</h4>
+            <p>
+                The SCBC Color Pallette consists of 7 base colors, each with 10 tinted variations. Syntax for variables and classes follow an object oriented pattern. For example:
+                <code>$c-white</code> where "c" denotes color followed by the name.
+            </p>
+            <h5>If you're using the source SASS files:</h5>
+            <p>
+                You'll have access to variables for each base color and all of it's tints. For example:
+                <code>$c-white-</code>, <code>$c-white-10</code>, etc...
+            </p>
+            <h5>If you're using the CSS file:</h5>
+            <p>
+                You'll have access to classes for each base color. There are background, fill and border classes for each tint. For example:
+                <code>.c-bg-white</code> which renders <code>background: #fff</code>, <code>.c-fill-white</code> which renders <code>color: #fff</code>, and <code>.c-line-white</code> which renders <code>border-color: #fff</code>.
+            </p>
+        </div>
+        <div class="col-md-9">
+            
+    <h4>Black</h4>
+    <ul class="color-strip">
+        
+            <li class="hexagon black-100"></li>
+        
+            <li class="hexagon black-90"></li>
+        
+            <li class="hexagon black-80"></li>
+        
+            <li class="hexagon black-70"></li>
+        
+            <li class="hexagon black-60"></li>
+        
+            <li class="hexagon black-50"></li>
+        
+            <li class="hexagon black-40"></li>
+        
+            <li class="hexagon black-30"></li>
+        
+            <li class="hexagon black-20"></li>
+        
+            <li class="hexagon black-10"></li>
+        
+    </ul>
+
+    <h4>Cream</h4>
+    <ul class="color-strip">
+        
+            <li class="hexagon cream-100"></li>
+        
+            <li class="hexagon cream-90"></li>
+        
+            <li class="hexagon cream-80"></li>
+        
+            <li class="hexagon cream-70"></li>
+        
+            <li class="hexagon cream-60"></li>
+        
+            <li class="hexagon cream-50"></li>
+        
+            <li class="hexagon cream-40"></li>
+        
+            <li class="hexagon cream-30"></li>
+        
+            <li class="hexagon cream-20"></li>
+        
+            <li class="hexagon cream-10"></li>
+        
+    </ul>
+
+    <h4>Orange</h4>
+    <ul class="color-strip">
+        
+            <li class="hexagon orange-100"></li>
+        
+            <li class="hexagon orange-90"></li>
+        
+            <li class="hexagon orange-80"></li>
+        
+            <li class="hexagon orange-70"></li>
+        
+            <li class="hexagon orange-60"></li>
+        
+            <li class="hexagon orange-50"></li>
+        
+            <li class="hexagon orange-40"></li>
+        
+            <li class="hexagon orange-30"></li>
+        
+            <li class="hexagon orange-20"></li>
+        
+            <li class="hexagon orange-10"></li>
+        
+    </ul>
+
+    <h4>Rust</h4>
+    <ul class="color-strip">
+        
+            <li class="hexagon rust-100"></li>
+        
+            <li class="hexagon rust-90"></li>
+        
+            <li class="hexagon rust-80"></li>
+        
+            <li class="hexagon rust-70"></li>
+        
+            <li class="hexagon rust-60"></li>
+        
+            <li class="hexagon rust-50"></li>
+        
+            <li class="hexagon rust-40"></li>
+        
+            <li class="hexagon rust-30"></li>
+        
+            <li class="hexagon rust-20"></li>
+        
+            <li class="hexagon rust-10"></li>
+        
+    </ul>
+
+    <h4>Green-light</h4>
+    <ul class="color-strip">
+        
+            <li class="hexagon green-light-100"></li>
+        
+            <li class="hexagon green-light-90"></li>
+        
+            <li class="hexagon green-light-80"></li>
+        
+            <li class="hexagon green-light-70"></li>
+        
+            <li class="hexagon green-light-60"></li>
+        
+            <li class="hexagon green-light-50"></li>
+        
+            <li class="hexagon green-light-40"></li>
+        
+            <li class="hexagon green-light-30"></li>
+        
+            <li class="hexagon green-light-20"></li>
+        
+            <li class="hexagon green-light-10"></li>
+        
+    </ul>
+
+    <h4>Green-dark</h4>
+    <ul class="color-strip">
+        
+            <li class="hexagon green-dark-100"></li>
+        
+            <li class="hexagon green-dark-90"></li>
+        
+            <li class="hexagon green-dark-80"></li>
+        
+            <li class="hexagon green-dark-70"></li>
+        
+            <li class="hexagon green-dark-60"></li>
+        
+            <li class="hexagon green-dark-50"></li>
+        
+            <li class="hexagon green-dark-40"></li>
+        
+            <li class="hexagon green-dark-30"></li>
+        
+            <li class="hexagon green-dark-20"></li>
+        
+            <li class="hexagon green-dark-10"></li>
+        
+    </ul>
+
+
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
