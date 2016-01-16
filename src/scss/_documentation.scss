@@ -1,0 +1,86 @@
+code {
+    background-color: $c-black-30;
+}
+
+.color-strip {
+    position: relative;
+    list-style-type: none;
+    padding: 0 0 0;
+    margin: 0;
+    display: block;
+    height: 120px;
+
+    .color-name {
+        position: absolute;
+        top: -48px;
+        z-index: 1;
+        color: $c-white-30;
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: 128px;
+        left: -21px;
+    }
+}
+
+.color {
+    height: 75px;
+}
+
+@mixin make-hexagon-color-classes($name, $color) {
+    @for $i from 1 through 10 {
+        &.#{$name}-#{$i*10} {
+            background: rgba($color, ($i*.1));
+            &:before {
+                border-bottom-color: rgba($color, ($i*.1));
+            }
+            &:after {
+                border-top-color: rgba($color, ($i*.1));
+            }
+        }
+    }
+}
+
+.hexagon {
+    width: 104px;
+    height: 60px;
+    position: relative;
+    margin: 0 0 0 -60px;
+    top: 30px;
+    float: left;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+        border-bottom: 30px solid;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+        border-top: 30px solid;
+    }
+
+    @include make-hexagon-color-classes(black, $c-black);
+    @include make-hexagon-color-classes(cream, $c-cream);
+    @include make-hexagon-color-classes(orange, $c-orange);
+    @include make-hexagon-color-classes(rust, $c-rust);
+    @include make-hexagon-color-classes(green-light, $c-green-light);
+    @include make-hexagon-color-classes(green-dark, $c-green-dark);
+
+}

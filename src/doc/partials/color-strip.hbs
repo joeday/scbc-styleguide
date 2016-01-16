@@ -1,0 +1,8 @@
+{{#each colorStrips}}
+    <h4>{{capitalizeFirst name}}</h4>
+    <ul class="color-strip">
+        {{#each tints}}
+            <li class="hexagon {{../name}}-{{this}}"></li>
+        {{/each}}
+    </ul>
+{{/each}}

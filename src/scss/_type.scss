@@ -1,0 +1,92 @@
+body {
+    // Our base font-size is 18px so paragraphs are set nicely
+    font-size: 18px;
+}
+
+//sizes
+.type-t1 {
+    font-size: 5.063em;
+    line-height: 1.2;
+    letter-spacing: -4px;
+}
+
+.type-t2 {
+    font-size: 3.375em;
+    letter-spacing: -2px;
+}
+
+.type-t3 {
+    font-size: 2.25em;
+    letter-spacing: -1px;
+}
+
+.type-t4 {
+    font-size: 1.5em;
+}
+
+.type-t5 {
+    font-size: 1em;
+}
+
+.type-t6 {
+    font-size: .667em;
+}
+
+.type-t7 {
+    font-size: .444em;
+}
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 0;
+}
+
+h1,
+.type-h1 {
+    @extend .type-t1;
+    font-weight: bold;
+}
+
+h2,
+.type-h2 {
+    @extend .type-t2;
+    font-weight: bold;
+}
+
+h3,
+.type-h3 {
+    @extend .type-t3;
+}
+
+h4,
+.type-h4 {
+    @extend .type-t4;
+}
+
+h5,
+.type-h5 {
+    @extend .type-t5;
+}
+
+//subheadings
+.type-sh1 {
+    @extend .type-t3;
+    font-weight: lighter;
+}
+
+.type-sh2 {
+    @extend .type-t4;
+    font-weight: lighter;
+}
+
+// paragraph
+p,
+.type-p1 {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.4;
+}

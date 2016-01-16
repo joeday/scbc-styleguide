@@ -1,0 +1,86 @@
+<section id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>SCBC Styleguide</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="typography" class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Typography</h2>
+        </div>
+        <div class="col-md-3">
+            <h4>SCBC Type Ramp</h4>
+            <p>The SCBC Type Ramp is based on a modular scale of 1.5. The base font size is 18px, with each size above it multiplied by 1.5 and each size below it divided by 1.5. There are 7 total sizes that are categorized according to the following:</p>
+
+            <h5>Headings</h5>
+            <div class="type-t5">
+                There are 5 headings to correspond to the semantic HTML tags. <code>h1</code> and <code>h2</code> have corresponding subheadings which are detailed in the subheading section below.
+
+                <ul>
+                    <li><code>h1</code> &amp; <code>.type-h1</code></li>
+                    <li><code>h2</code> &amp; <code>.type-h2</code></li>
+                    <li><code>h3</code> &amp; <code>.type-h3</code></li>
+                    <li><code>h4</code> &amp; <code>.type-h4</code></li>
+                    <li><code>h5</code> &amp; <code>.type-h5</code></li>
+                </ul>
+            </div>
+
+            <h5>Subheadings</h5>
+            <div class="type-t5">
+                These are to be used in conjunction with their appropriate headings. For instance, when using <code>.type-h1</code> you would use <code>.type-sh1</code>.
+
+                <ul>
+                    <li><code>.type-sh1</code></li>
+                    <li><code>.type-sh2</code></li>
+                </ul>
+            </div>
+
+            <h5>Paragraphs, captions, ect...</h5>
+            <div class="type-t5">
+                The remaining sizes are used for paragraphs &amp; captions.
+                <ul>
+                    <li><code>p</code> &amp; <code>.type-t5</code></li>
+                    <li><code>.caption</code> &amp; <code>.type-t6</code></li>
+                    <li><code>.caption-small</code> &amp; <code>.type-t7</code></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-9">
+            {{> type-ramp }}
+        </div>
+    </div>
+</section>
+
+<section id="colors" class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>colors</h2>
+        </div>
+        <div class="col-md-3">
+            <h4>SCBC Color Palette</h4>
+            <p>
+                The SCBC Color Pallette consists of 7 base colors, each with 10 tinted variations. Syntax for variables and classes follow an object oriented pattern. For example:
+                <code>$c-white</code> where "c" denotes color followed by the name.
+            </p>
+            <h5>If you're using the source SASS files:</h5>
+            <p>
+                You'll have access to variables for each base color and all of it's tints. For example:
+                <code>$c-white-</code>, <code>$c-white-10</code>, etc...
+            </p>
+            <h5>If you're using the CSS file:</h5>
+            <p>
+                You'll have access to classes for each base color. There are background, fill and border classes for each tint. For example:
+                <code>.c-bg-white</code> which renders <code>background: #fff</code>, <code>.c-fill-white</code> which renders <code>color: #fff</code>, and <code>.c-line-white</code> which renders <code>border-color: #fff</code>.
+            </p>
+        </div>
+        <div class="col-md-9">
+            {{> color-strip hexagons}}
+        </div>
+    </div>
+</section>
